@@ -1,0 +1,171 @@
+6240 Story #7B ( BS Pt 2): Parse through html
+
+Parse through the html returned and display the information you want to display. Make sure you are getting into the individual elements and stripping away any formatting you don't want. Add a link from your app's home page.
+
+1) Get elements out of your Beautiful Soup object, send just the values you want as relevant dictionary objects to the template (nested dictionaries are fine)
+2) Display all objects within the data scrape template
+3) Test to make sure everything works as expected, do error handling where necessary
+4) Link the data scraping page to the app's home page.
+5) Add whatever styling is appropriate to your templates.
+
+This is the last Beautiful Soup story. Make sure it has all the functionality that you want.
+
+You are finished with the story when you have information displaying from the web page you're scraping on your page, and you've added all functionality you want to interact with the content. Make sure to test and debug before submitting.
+
+Optional Add-On:
+-Allow the user to filter the information on the page
+
+Tutorials/Documentation:
+https://www.dataquest.io/blog/web-scraping-tutorial-python/
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+==============
+
+6238 Story #7A (API Pt 2): Parse through JSON
+
+Parse through the JSON file returned and display the information you want to display. Make additional queries to the API as necessary. Add a link from your app's home page.
+
+1) Get elements out of your API JSON response, send just the values you want as relevant dictionary objects to the template (nested dictionaries are fine)
+2) Display all objects either in the original API service page or in a new results page.
+3) Test to make sure all the options work as expected, do error handling where necessary
+4) Link the API request page to the app's home page.
+5) Add whatever styling is appropriate to your templates.
+
+This is the last API story. Make sure it has all the functionality that you want.
+
+You are finished with the story when you have information displaying from the API on your API page, and you've added all functionality you want to interact with the API. Make sure to test and debug before submitting.
+
+Optional Add-On:
+-Allow the user to filter the results from the API
+
+Tutorial:
+https://www.dataquest.io/blog/python-api-tutorial/
+Find your specific API's documentation
+https://simpleisbetterthancomplex.com/tutorial/2018/02/03/how-to-use-restful-apis-with-django.html
+
+==============
+
+6239 Story #6B (BS Pt 1): Setup Beautiful Soup
+
+Create a new template for displaying information sourced from another website. Use Beautiful Soup to data scrape the site and find the relevant information.
+
+1) Create a new template for displaying the content
+2) Use Beautiful Soup to get the html data from your selected site as a navigable object
+3) Utilizing whatever options necessary, get the section of data you want to scrape
+4) Add comments to note which portions of the data you're trying to extract 
+
+You are finished with the story when you can print a basic object (table, array, list, etc) that contains the elements you want to extract when the Data Scraping page loads. Make sure to test and debug before submitting.
+
+Tutorials/Documentation:
+https://www.dataquest.io/blog/web-scraping-tutorial-python/
+https://www.crummy.com/software/BeautifulSoup/bs4/doc/
+
+==============
+
+6237 Story #6A  (API Pt 1): Connect to API
+
+Connect to your API and get the JSON response, add in a template for displaying the information.
+
+1) Create a new API template and render with a function
+2) Go through the API documentation
+3) Connect to the API and write a basic JSON response (either to a txt file or the terminal)
+4) Create a way to get any input information from the user and get the specific response for that input.
+5) Add comments of which elements from the JSON response you're looking to get the value for
+
+You are finished with the story when you can print a JSON response when the API page loads. Make sure to test and debug before submitting.
+
+Tutorial:
+https://www.dataquest.io/blog/python-api-tutorial/
+Find your specific API's documentation
+https://simpleisbetterthancomplex.com/tutorial/2018/02/03/how-to-use-restful-apis-with-django.html
+
+"the user is whoever is using your app.   For whatever API you have chosen, there should be endpoints that will allow you to submit search term(s) that will tailor the response you receive.  You'll want to first test the endpoint you have chosen manually, and verify that you can submit different search terms and get successful responses from your API.  Then, you'll want to allow the user of your app to determine those search term(s) instead, whether through text boxes or drop down lists, etc.   The responses from your API will generally be very large and convoluted looking, so for 6A all you need to do is dump the raw response either to the terminal, or to a text file.  In the next story, 7A, you'll work on understanding that response, and on extracting useful information from it.  Hope that helps."
+
+==============
+
+6204 Story #5: Edit and Delete Functions
+
+Allow for edits and delete functions to be done from the details page or from separate pages. Have confirmation before deleting.
+
+1) Add an edit page to the templates (another pattern url)
+2) Use model forms and instances to display the content of a single item from the database
+3) Have the views function send the information for the single item and save any changes.
+4) Include the option to delete an item with a confirmation that the user wants to delete.
+5) Add whatever styling is appropriate to your templates.
+
+You are finished with the story when you have a functioning edit page for any item in the database, and the ability to delete that item. Make sure to test and debug before submitting.
+
+Optional Add-On:
+-Use a modal and javascript for the delete confirmation message
+
+Tutorial/Documentation:
+https://docs.djangoproject.com/en/2.2/ref/models/instances/
+https://tutorial.djangogirls.org/en/django_forms/
+
+===============
+
+6194 Story #4: Details page
+
+Create a details page that will show the details of any single item from within the database, as selected by the user. Link this to the index page for each item.
+
+1) Add a details template to the template folder, register the url pattern 
+2) Create a views function that will find the single desired instance from the database and send it to the template
+3) Add in links for each element on the index page that will direct to the details page for that item
+4) Display all the details of the item on the details page.
+5) Add whatever styling is appropriate to your templates.
+
+You are finished with the story when you have a functioning details page that will work for any item within your database. Make sure to test and debug before submitting.
+
+Tutorial/Documentation:
+https://docs.djangoproject.com/en/2.2/intro/tutorial03/
+
+==============
+
+6155 Story #3: Index page
+
+Display the information from the database in an index page.
+
+1) Create a new index page, link it from your home page
+2) Add in a function that gets all the items from the database and sends them to the template
+3) Display a list of items in the database, with some or all of the fields for that item displayed with labels/headers
+4) Link your app's home page to the main home page.
+5) Add whatever styling is appropriate to your templates.
+
+You are finished with the story when you have a functioning index page that lists the items in the database. Make sure to test and debug before submitting.
+
+Tutorials/Documentation:
+https://docs.djangoproject.com/en/2.2/topics/db/managers/
+https://docs.djangoproject.com/en/2.2/ref/templates/language/
+
+==============
+
+6148 Story #2: Create your model
+
+Create a model for the collection item you will be tracking and add the ability to create a new item.
+
+1) Create your model and add a migration, make sure to plan out all the categories you want to track for your object. Include an objects manager for accessing the database.
+2) Create a model form that will include any inputs the user needs to make
+3) Add a template to your app folder for creating a new item.
+4) Add a views function that renders the create page and utilizes the model form to save the collection item to the database.
+5) Check the database to make sure your item saves without errors.
+6) Add whatever styling is appropriate to your templates.
+
+You are finished with the story when you have a functioning create page. Make sure to test and debug before submitting.
+
+Tutorials/Documentation:
+https://docs.djangoproject.com/en/2.2/topics/db/models/
+https://docs.djangoproject.com/en/2.2/topics/forms/modelforms/
+
+==============
+
+6136 Story #1: Build the basic app (Hello World)
+
+# The basic steps for creating a brand new app (i.e. how to get through Story #1):
+# From your terminal use python manage.py startapp MyApp where you name your App something relevant (not just MyApp)
+# Register your app by including it in Installed Apps within settings.py
+# Create a new subfolder in the templates folder with your app name and add a base template and a home page (see below for naming information). The base template should extend our base.html and your home should extend your base template. This is known as template inheritance.
+# Add a function to your views.py to render the home template. You cannot render a template without a matching views function.
+# Create a urls.py file for your app, add the appropriate code to register your url patterns, and include this urls in the main url.py file
+# Add some content and initial styling to your home page
+# Run the project, navigate to your home page, and fix any styling that needs it
+
